@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klein Media House | Portfolio</title>
+    <style>
+        body { 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 { color: #ffffff; }
+        .header { 
+            text-align: center; 
+            margin-bottom: 60px; 
+            padding-bottom: 40px;
+            border-bottom: 1px solid #333;
+        }
+        .header h1 { letter-spacing: 2px; text-transform: uppercase; }
+        
+        .grid { 
+            display: grid; 
+            gap: 30px; 
+            margin-bottom: 80px;
+        }
+        .video-grid { 
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+        }
+        .photo-grid { 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        }
+        
+        iframe, img { 
+            width: 100%; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            display: block;
+            object-fit: cover;
+        }
+
+        .photo-card {
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-4px);
+            border-color: #555;
+        }
+
+        .photo-card a {
+            display: block;
+        }
+
+        .photo-card img {
+            height: 240px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        
+        .photo-caption {
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        .photo-caption h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .team-section { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 40px; 
+            align-items: center; 
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+        .team-photo { 
+            flex: 1 1 400px; 
+            max-width: 500px; 
+        }
+        .team-bios {
+            flex: 1 1 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Klein Media House</h1>
+            <p>Creative Visual Stories & Authentic Narratives</p>
+        </div>
+
+        <h2>Video Portfolio</h2>
+        <div class="grid video-grid">
+            <iframe src="https://player.vimeo.com/video/1148219083?h=740dc6e243&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1004228012?h=febb51a61f&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1225106596?h=73a21352a9&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1117852902?h=107da85227&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1104231726?h=735800e65d&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/447975471?h=00d7eec922&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1067929231?h=acb118b370&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/1050219427?h=cddd7c467e&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/968964219?h=6a9b9083e4&title=0&byline=0&portrait=0" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+
+        <h2>Photography Portfolio</h2>
+        <p style="margin-bottom: 30px; color: #aaa;">Featuring commercial photography and cultural storytelling by Cailey Klein.</p>
+        <div class="grid photo-grid">
+            <!-- Commercial Photography -->
+            <div class="photo-card">
+                <a href="media/DSC00341.jpg" target="_blank">
+                    <img src="media/DSC00341.jpg" alt="Savory Plate">
+                </a>
+                <div class="photo-caption">
+                    <h3>Savory Plate: Entree Showcase</h3>
+                    <p>Commercial food photography for The Cheesecake Factory.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00228.jpg" target="_blank">
+                    <img src="media/DSC00228.jpg" alt="Pecan Supreme Cheesecake">
+                </a>
+                <div class="photo-caption">
+                    <h3>Signature Dessert: Pecan Supreme</h3>
+                    <p>High-resolution product showcase highlighting textures.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00862.jpg" target="_blank">
+                    <img src="media/DSC00862.jpg" alt="Chocolate Cherry Forest Cake">
+                </a>
+                <div class="photo-caption">
+                    <h3>Specialty Baking</h3>
+                    <p>Textured shot designed for high-end retail marketing.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00343.jpg" target="_blank">
+                    <img src="media/DSC00343.jpg" alt="Modern Holiday Decor">
+                </a>
+                <div class="photo-caption">
+                    <h3>Modern Holiday Decor</h3>
+                    <p>Stylized commercial set design and holiday photography.</p>
+                </div>
+            </div>
+            
+            <!-- Cultural & Landscape Photography -->
+            <div class="photo-card">
+                <a href="media/DSC00297.jpg" target="_blank">
+                    <img src="media/DSC00297.jpg" alt="Lakeside Traditional Tipi">
+                </a>
+                <div class="photo-caption">
+                    <h3>Lakeside Traditional Tipi</h3>
+                    <p>Cultural landscape photography.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00294.jpg" target="_blank">
+                    <img src="media/DSC00294.jpg" alt="Community Gathering Space">
+                </a>
+                <div class="photo-caption">
+                    <h3>Community Gathering Space</h3>
+                    <p>Outdoor meeting grounds featuring traditional structures.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00306.jpg" target="_blank">
+                    <img src="media/DSC00306.jpg" alt="Cultural Elements & Space">
+                </a>
+                <div class="photo-caption">
+                    <h3>Cultural Elements & Space</h3>
+                    <p>Interior photography showcasing traditional medicines and items.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00394.jpg" target="_blank">
+                    <img src="media/DSC00394.jpg" alt="Historical Monument">
+                </a>
+                <div class="photo-caption">
+                    <h3>Historical Monument</h3>
+                    <p>Documenting historical sites and community landmarks.</p>
+                </div>
+            </div>
+            <div class="photo-card">
+                <a href="media/DSC00311.jpg" target="_blank">
+                    <img src="media/DSC00311.jpg" alt="Local Flora & Fauna">
+                </a>
+                <div class="photo-caption">
+                    <h3>Local Flora & Fauna</h3>
+                    <p>Nature photography capturing the local ecosystem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <div class="team-photo">
+                <img src="media/87FFDDC6-30CC-4C8E-AD83-8B1F653E5785_1_105_c.jpeg" alt="Cailey and Shane Klein">
+            </div>
+            <div class="team-bios">
+                <h2>About Klein Media House</h2>
+                <p><strong>Shane Klein | Director & Producer</strong><br>
+                With an extensive background in media production, Shane focuses on client-driven storytelling. He specializes in creating digital narratives, educational content, and impactful visual media that connect with audiences.</p>
+                
+                <p style="margin-top: 20px;"><strong>Cailey Klein | Videographer & Photo Editor</strong><br>
+                Cailey brings a refined focus to commercial food, product, and storytelling visuals. Her expertise was recently commissioned by The Cheesecake Factory, showcasing her ability to deliver world-class retail assets. She also captures striking environmental and cultural photography, adding depth to our visual narratives.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
